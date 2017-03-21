@@ -7,4 +7,7 @@ app.get("*", function(req, res){
     res.render("notfound");
 });
 
-app.listen()
+
+app.listen(3001, 'localhost', function(){
+  console.log("SERVER IS RUNNING...AWAY!");
+});
