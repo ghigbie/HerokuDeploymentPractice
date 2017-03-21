@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ghigbie/HerokuDeploymentPractice/issues"
   },
-  "homepage": "https://github.com/ghigbie/HerokuDeploymentPractice#readme"
+  "homepage": "https://github.com/ghigbie/HerokuDeploymentPractice#readme",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
 }
