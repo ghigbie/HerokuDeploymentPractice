@@ -13,6 +13,10 @@ app.get("/home", function(req, res){
     res.redirect("/");
 });
 
+app.get("/index", function(req, res){
+    res.redirect("/");
+});
+
 app.get("*", function(req, res){
     res.render("notfound");
 });
