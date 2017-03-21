@@ -9,10 +9,13 @@ app.get("/", function(req, res){
     res.render("home");
 });
 
+app.get("/home", function(req, res){
+    res.redirect("/");
+});
+
 app.get("*", function(req, res){
     res.render("notfound");
 });
-
 
 app.listen(3001, 'localhost', function(){
   console.log("SERVER IS RUNNING...AWAY!");
