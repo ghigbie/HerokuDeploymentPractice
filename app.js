@@ -2,6 +2,12 @@ const express = require("express");
 const ejs     = requier("ejs");
 const app     = express();
 
+app.set("view engine", "ejs");
+
+
+app.get("/", function(req, res){
+    res.render("home");
+});
 
 app.get("*", function(req, res){
     res.render("notfound");
