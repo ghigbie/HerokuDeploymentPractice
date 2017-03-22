@@ -17,6 +17,10 @@ app.get("/index", function(req, res){
     res.redirect("/");
 });
 
+app.get("/game", function(req, res){
+    res.render("rgbColorGame");
+});
+
 app.get("*", function(req, res){
     res.render("notfound");
 });
