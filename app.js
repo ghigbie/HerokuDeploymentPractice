@@ -18,7 +18,7 @@ app.get("/index", function(req, res){
 });
 
 app.get("/game", function(req, res){
-    res.render("portfolioPages/rgbColorGame");
+    res.render("rgbColorGame");
 });
 
 app.get("*", function(req, res){
