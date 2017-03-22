@@ -21,6 +21,12 @@ app.get("*", function(req, res){
     res.render("notfound");
 });
 
-app.listen(3001, 'localhost', function(){
-  console.log("SERVER IS RUNNING...AWAY!");
+//for deploying on local machine
+// app.listen(3001, 'localhost', function(){
+//   console.log("SERVER IS RUNNING...AWAY!");
+// });
+
+//for deplyoing on heroku
+app.listen(process.env.PORT, process.env.IP, function(){
+  console.log("SERVER IS RUNNING...AWAY");
 });
