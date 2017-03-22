@@ -1,9 +1,9 @@
 let numSquares = 6;
-var colors = [];
-var pickedColor;
+let colors = [];
+let pickedColor;
 //selector variables
-var squares = document.querySelectorAll(".square");
-var colorDisplay = document.getElementById("colorDisplay");
+let squares = document.querySelectorAll(".square");
+let colorDisplay = document.getElementById("colorDisplay");
 let messageDisplay = document.querySelector("#message");
 let h1 = document.querySelector("h1");
 let resetButton = document.querySelector("#reset");
